@@ -1,0 +1,64 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --border-thickness: 3px;
+}
+
+.board {
+  background-color: transparent;
+  aspect-ratio: 1;
+  height: 50vh;
+  margin: 5%;
+}
+
+.row {
+  background-color: transparent;
+  width: 100%;
+  height: calc(33.3333% - 2/3*var(--border-thickness));
+}
+
+.row-divide {
+  background-color: black;
+  width: 100%;
+  height: var(--border-thickness);
+}
+
+.cell {
+  display: inline-block;
+  background-color: white;
+  width: calc(33.3333% - 2/3*var(--border-thickness));
+  height: 100%;
+  vertical-align: top;
+}
+
+.cell:hover {
+  background-color: rgba(48, 213, 200, 0.2);
+  transition-duration: 0.1s;
+}
+
+.cell-divide {
+  display: inline-block;
+  background-color: black;
+  width: var(--border-thickness);
+  height: 100%;
+}
+
+.xo {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15vh;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.status {
+  margin: 5px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
