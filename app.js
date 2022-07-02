@@ -9,6 +9,7 @@ const REQUEST_LISTENER = function(request, response) {
     response.end("Hello")
 }
 
+
 const SERVER = HTTP.createServer(REQUEST_LISTENER)
 SERVER.listen(PORT, HOST, function() {
     console.log(`Server is running on http://${HOST}:${PORT}`)
