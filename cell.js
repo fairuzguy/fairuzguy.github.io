@@ -9,6 +9,7 @@ class Cell extends React.Component {
     render() {
         return (<div
                 className="cell" 
-                onClick={() => this.props.onClick()}><p className="xo">{this.props.value}</p></div>);
+                onClick={() => this.props.onClick()}><p className="xo">{this.props.value}</p></div>
+        );
     }
 }
