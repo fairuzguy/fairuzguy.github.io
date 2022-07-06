@@ -1,26 +1,3 @@
-class Cell extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            value: null,
-        };
-    }
-    
-    render() {
-        return (<div
-                className="cell" 
-                onClick={() => this.props.onClick()}><p className="xo">{this.props.value}</p></div>);
-    }
-}
-
-function calculateWinner(cells) {
-    for (let i = 0; i < 3; i++) {
-        for (let j = 0; j < 3; j++) {
-            
-        }
-    }
-}
-
 class Board extends React.Component {
     constructor(props) {
         super(props);
