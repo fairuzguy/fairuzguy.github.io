@@ -26,8 +26,8 @@ class Board extends React.Component {
         // call back end
         let url = "https://tic-tac-trouble.herokuapp.com";
         let requestData = {
-            "turn": turnChar,
-            "cell": i
+            turn: turnChar,
+            cell: i
         };
         let responseData = fetchAsync(url, requestData)
         console.log(responseData);
