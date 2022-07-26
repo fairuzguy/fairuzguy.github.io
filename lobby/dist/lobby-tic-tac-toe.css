@@ -1,0 +1,141 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lobby-list {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  max-width: 500px;
+  width: 95%;
+  height: 50%;
+}
+
+.lobbies {
+  display: inline-block;
+  background-color: lightgray;
+  border: 200px solid gray;
+  border-width: medium;
+  text-align: center;
+  margin: 0%;
+  width: 90%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.lobby-item {
+  background-color: aliceblue;
+  height: 30px;
+  justify-content: center;
+  border-bottom: 2px solid lightgray;
+}
+
+.name {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  margin-left: 5%;
+  font-weight: light;
+}
+
+.join {
+  background-color: lightgreen;
+  height: 20px;
+  width: 20%;
+  max-width: 80px;
+  min-width: 50px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: 5%;
+  position: relative;
+  top: 0%;
+  transform: translateY(-65%);
+  transition-duration: 0.15s;
+  font-weight: bold;
+}
+
+.join::after {
+  content: "JOIN";
+}
+
+.join:hover {
+  transition-duration: 0.15s;
+  background-color: limegreen;
+  cursor: pointer;
+}
+
+.create-lobby {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  max-width: 500px;
+  width: 95%;
+  height: 0%;
+}
+
+.new-lobby {
+  display: inline-block;
+  text-align: left;
+}
+
+.new-lobby-name {
+  border-width: 3px;
+  border-color: dimgrey;
+  border-style: none;
+  border-bottom-style: inset;
+  transition-duration: 0.15s;
+}
+
+.new-lobby-name:hover {
+  border-color: cornflowerblue;
+  transition-duration: 0.15s;
+}
+
+.new-lobby-name:focus {
+  border-color: cornflowerblue;
+}
+
+.center {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.create {
+  text-align: center;
+  background-color: lightgreen;
+  height: 30px;
+  width: 80%;
+  max-width: 100px;
+  min-width: 50px;
+  border-radius: 5px;
+  transition-duration: 0.15s;
+  font-weight: bold;
+}
+
+.create::after {
+  content: "CREATE";
+  font-size: 14pt;
+  position: relative;
+  top: 3px;
+}
+
+.create:hover {
+  transition-duration: 0.15s;
+  background-color: limegreen;
+  cursor: pointer;
+}

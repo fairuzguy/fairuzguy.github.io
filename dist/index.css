@@ -1,73 +1,64 @@
 html, body {
-  margin: 0;
+  margin: 1%;
   padding: 0;
 }
 
-:root {
-  --border-thickness: 3px;
+#root {
+  height: 100%;
+  width: 100%;
 }
 
-.board {
-  background-color: transparent;
+.item-img {
+  opacity: 0.5;
+  border-radius: 15%;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.15s;
+  mask-image: radial-gradient(circle, black 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.item-img:hover {
+  opacity: 1;
+  transition-duration: 0.15s;
+  cursor: pointer;
+}
+
+.container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 3%;
+  display: flex;
+}
+
+.container > * {
+  margin: 1.5% 0;
+}
+
+.item {
   aspect-ratio: 1;
-  height: 50vh;
-  margin: 5%;
-  user-select: none;
+  width: 20%;
+  border-radius: 15%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.row {
-  background-color: transparent;
-  width: 100%;
-  height: calc(33.3333% - 2/3*var(--border-thickness));
-  user-select: none;
+#tic-tac-toe {
+  order: 0;
 }
 
-.row-divide {
-  background-color: black;
-  width: 100%;
-  height: var(--border-thickness);
-  user-select: none;
+#connect-4 {
+  order: 1;
 }
 
-.cell {
-  display: inline-block;
-  background-color: white;
-  width: calc(33.3333% - 2/3*var(--border-thickness));
-  height: 100%;
-  vertical-align: top;
-  user-select: none;
-  cursor: pointer;
+#guess-who {
+  order: 2;
 }
 
-.cell:hover {
-  background-color: rgba(48, 213, 200, 0.2);
-  transition-duration: 0.1s;
+#crazy-8 {
+  order: 3;
 }
 
-.cell-divide {
-  display: inline-block;
-  background-color: black;
-  width: var(--border-thickness);
-  height: 100%;
-  user-select: none;
-}
-
-.xo {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  vertical-align: middle;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 15vh;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  user-select: none;
-  -webkit-user-select: none;
-  cursor: pointer;
-}
-
-.status {
-  margin: 5px;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+#forty-one {
+  order: 4;
 }
