@@ -15,6 +15,7 @@ html, body {
   height: 100%;
   transition-duration: 0.15s;
   mask-image: radial-gradient(circle, black 0%, rgba(0, 0, 0, 0.5) 100%);
+  -webkit-mask-image: radial-gradient(circle, black 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .item-img:hover {
